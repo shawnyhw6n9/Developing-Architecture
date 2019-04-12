@@ -1,2 +1,2 @@
-# Developing-Architecture
-Describe developing architecture
+# Initial page
+
