@@ -8,7 +8,8 @@
 3. [目的](#ch2)
 4. [學習目標](#ch3)
 5. [前端](#ch4)  
-    5.1. [Angular](#ch4-1)
+    5.1. [Angular](#ch4-1)  
+    5.2. [Vue](#ch4-2)
 6. [服務](#ch5)  
     6-1. [Spring Boot](#ch5-1)  
     6-2. [Spring Cloud](#ch5-2)  
@@ -24,9 +25,9 @@
     8-4. [Network](#ch7-4)  
     8-5. [Docker compose](#ch7-5)
 9. [容器管理平台](#ch8)  
-    9-1. [Docker swarm](#ch8-1)  
-    9-2. [Kubernetes](#ch8-2)  
-    9-3. [Openshift](#ch8-3)
+    9-1. [Kubernetes](#ch8-1)  
+    9-2. [Openshift](#ch8-2)  
+    9-3. [Docker swarm](#ch8-2)
 10. [DevOps](#ch9)
 11. [總結](#conclusion)
 99. [參考](#ch99)
@@ -38,6 +39,7 @@ ___
 
 ##### 思考軟體架構的變化時，有幾個名詞充斥在各種文章，在各大品牌的產品中出現，有的成為業界標準，有的亦成為加速軟體發展中所需具備的基礎知識。  
 ##### 探討以前的軟體架構，遭遇到什麼困難，面臨到什麼排戰，迫使我們追求新的軟體架構。  
+##### 我們需要一個以更宏觀的角度，結合開發、維運、治理、分析，並且朝自動化、連結任何事的新的軟體架構。
 
 [TOP](#top)
 ___
@@ -46,12 +48,13 @@ ___
 ---------------------
 
 #### 為了讓同仁都具備一致的基礎知識，並且知道未來延伸的方向。
-#### 已具備能力：
+#### 必須先具備的能力：
 * ##### Java 開發能力
 * ##### Spring 使用經驗
 * ##### Restful API 測試及使用經驗
-* ##### MSSQL 資料庫使用經驗
+* ##### 資料庫使用經驗 MSSQL、H2Database
 * ##### Linux 基本指令
+* ##### Github 帳號
 #### 基礎知識：  
 * ##### Modern web applications：具有比以往更高的使用者期望和更高的需求。現今的 Web 應用程式應該要在世界上的任何地方全天候可用，並可讓幾乎所有裝置或所有尺寸的螢幕使用。 Web 應用程式必須安全、靈活、可調整，以符合尖峰需求。 越來越複雜的案例應透過使用 JavaScript 建置在用戶端上豐富的使用者體驗來處理，並有效率地透過 Web API 進行通訊。
 * ##### Spring base application：以 Java 為基礎，提供廣泛的程式功能與設定模型，讓開發者更專注於應用程式的商業邏輯上，讓開發者不用重新打造輪子。
@@ -88,7 +91,7 @@ ___
 <h3 id="ch4-1">Angular</h3>
 ---------------------------
 
-<h3 id="ch4-2">Vue</h3>
+<del><h3 id="ch4-2">Vue</h3></del>
 -----------------------
 
 ___
@@ -146,14 +149,14 @@ ___
 <h2 id="ch8">容器管理平台</h2>
 ----------------------------
 
-<h3 id="ch8-1">Docker swarm</h3>
---------------------------------
-
-<h3 id="ch8-2">Kubernetes</h3>
+<h3 id="ch8-1">Kubernetes</h3>
 ------------------------------
 
-<h3 id="ch8-3">Openshift</h3>
+<h3 id="ch8-2">Openshift</h3>
 -----------------------------
+
+<del><h3 id="ch8-3">Docker swarm</h3></del>
+--------------------------------
 
 ___
 
@@ -170,11 +173,19 @@ ___
 <h2 id="ch99">參考</h2>
 ----------------------
 
-* [第一個參考連結][ref1]
+* [Sprig Boot docs][ref1]
+* [Sprig Cloud docs][ref2]
+* [Docker docs][ref3]
+* [Modern Java Framework][ref4]
 * [Cloud Native Picture][pic1]
+* [Cloud Native Technology Picture][pic2]
 
-[ref1]: http://localhost/ "參考網站說明"
+[ref1]: https://docs.spring.io/spring-boot/docs/1.5.20.BUILD-SNAPSHOT/reference/htmlsingle/ "Sprig Boot docs"
+[ref2]: https://cloud.spring.io/spring-cloud-static/Edgware.SR5/single/spring-cloud.html "Spring Cloud docs"
+[ref3]: https://docs.docker.com "Docker docs"
+[ref4]: https://spring.io "Modern java"
 [pic1]: ./resource/images/messageImage_1523528832290.jpg "Cloud native picture"
+[pic2]: ./resource/images/微服務技術棧.jpg "Cloud native technology"
 
 [CATALOG](#catalog)
 ___
