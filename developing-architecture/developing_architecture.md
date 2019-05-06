@@ -5,8 +5,6 @@
 -------------------------
 1. [前言](#preface)
 2. [概述](#ch1)
-3. [目的](#ch2)
-4. [學習目標](#ch3)
 5. [前端](#ch4)  
     5.1. [Angular](#ch4-1)  
     5.2. [Vue](#ch4-2)
@@ -39,7 +37,7 @@ ___
 
 ##### 思考軟體架構的變化時，有幾個名詞充斥在各種文章，在各大品牌的產品中出現，有的成為業界標準，有的亦成為加速軟體發展中所需具備的基礎知識。  
 ##### 探討以前的軟體架構，遭遇到什麼困難，面臨到什麼排戰，迫使我們追求新的軟體架構。  
-##### 我們需要一個以更宏觀的角度，結合開發、維運、治理、分析，並且朝自動化、連結任何事的新的軟體架構。
+##### 我們需要一個以更宏觀的角度，結合開發、維運、治理、分析、可自動化及可連結的現代化新應用軟體架構。
 
 [TOP](#top)
 ___
@@ -59,32 +57,26 @@ ___
 * ##### Modern web applications：具有比以往更高的使用者期望和更高的需求。現今的 Web 應用程式應該要在世界上的任何地方全天候可用，並可讓幾乎所有裝置或所有尺寸的螢幕使用。 Web 應用程式必須安全、靈活、可調整，以符合尖峰需求。 越來越複雜的案例應透過使用 JavaScript 建置在用戶端上豐富的使用者體驗來處理，並有效率地透過 Web API 進行通訊。
 * ##### Spring base application：以 Java 為基礎，提供廣泛的程式功能與設定模型，讓開發者更專注於應用程式的商業邏輯上，讓開發者不用重新打造輪子。
 * ##### Cloud Native：雲原生的軟體架構是基於微服務架構思維，以容器技術為載體，一種產品研發運營的全新模式。
+  >Cloud native technologies empower organizations to build and run scalable
+applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.
+These techniques enable loosely coupled systems that are resilient,
+manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.
 * ##### Micro Services：是獨立的可自治系統，以 API 提供服務或是取得服務，基本上依據業務功能切分微服服的顆粒度大小。
 * ##### Container：容器是一個標準的軟體單元，它將程式碼及其所有依賴關係打包(系統工具，系統庫和設置)，以便應用程式從一個運行環境快速可靠地運行到另一個運行環境。
 * ##### Continuous Integration / Continuous Delivery：
-* ##### DevOps EcoSystem：
+* ##### DevOps EcoSystem & DevOps 生命週期：
 * ##### Agile Software Development：
+* ##### 瞭解為什麼要容器化：容器化有輕量化與高移轉能力的好處，並且透過容器化引擎，容器的開發、運行、與管理變得非常簡易  
+* ##### 總結出一套劇本，適時的隨著團隊運作而調整，找出最適合的敏捷開發方式  
 
-![pic2]
-
-##### 
-
-[CATALOG](#catalog) | [NEXT](#ch2)
-___
-
-<h2 id="ch2">目的</h2>
----------------------
-
-##### 至少讓同仁都看得懂下圖，且知道現在待的案子達成了那些，及那些還可以加強的。
+#### 讓同仁都看得懂下圖，且知道現在待的案子達成了那些，及那些還可以加強的。
 ![pic1]
 
-[PRIVOUS](#ch1) | [CATALOG](#catalog) | [NEXT](#ch3)
-___
+### 現代化新應用軟體架構
+#### 前端以現代化的網站應用程式開發，後台服務以 Spring Boot 應用程式為骨幹，互相以RESTful API 溝通，以容器技術建置環境，最終可以真的落實在專案開發上，打造自動化的軟體開發生命週期，以加速開發、整合、測試以及交付，最終產出可即時反應市場需求 (time to marketing) 的開發架構。
 
-<h2 id="ch3">學習目標</h2>
--------------------------
-架構
-#### 前端以現代化的網站應用程式開發，後台服務以 Spring Boot 應用程式為骨幹，互相以RESTful API 溝通，以容器技術建置環境，最終可以真的落實在專案開發上，打造自動化的軟體開發生命週期，以加速開發、整合、測試以及交付為目標。
+
+[PRIVOUS](#preface) | [CATALOG](#catalog) | [NEXT](#ch4)
 ___
 
 <h2 id="ch4">前端</h2>
@@ -165,6 +157,9 @@ ___
 <h2 id="ch9">DevOps</h2>
 ------------------------
 
+### Service Mesh  
+### Spring Cloud Netflix(OSS) VS Istio
+
 ___
 
 <h2 id="conclusion">總結</h2>
@@ -182,12 +177,27 @@ ___
 * [Cloud Native Picture][pic1]
 * [Cloud Native Technology Picture][pic2]
 
+<h3>練習與實作</h3>  
+-----------------
+
+* [Spring Boot Application Archetype][lab1]
+* [Spring Boot Application with Config Server][lab2]
+* [Spring Cloud Netflix with Hystrix Dashboard][lab3]
+* [Spring Data][lab3]
+* [Spring Security][lab3]
+* [Spring to Docker (s2i, frabic maven plugin)][lab3]
+
 [ref1]: https://docs.spring.io/spring-boot/docs/1.5.20.BUILD-SNAPSHOT/reference/htmlsingle/ "Sprig Boot docs"
 [ref2]: https://cloud.spring.io/spring-cloud-static/Edgware.SR5/single/spring-cloud.html "Spring Cloud docs"
 [ref3]: https://docs.docker.com "Docker docs"
 [ref4]: https://spring.io "Modern java"
+[ref5]: https://github.com/fabric8io-images/run-java-sh "run-java.sh is a universal startup script for Java applications, especially crafted for being run from within containers."
 [pic1]: ../resource/images/messageImage_1523528832290.jpg "Cloud native picture"
 [pic2]: ../resource/images/微服務技術棧.jpg "Cloud native technology"
+[lab1]: https://github.com/shawnyhw6n9/my-labs/tree/archetype "create project by archetype lab"
+[lab2]: https://github.com/shawnyhw6n9/my-labs/tree/config_management "config management lab"
+[lab3]: https://github.com/shawnyhw6n9/my-labs/tree/develop "Spring Cloud Netflix lab"
+
 
 [CATALOG](#catalog)
 ___
