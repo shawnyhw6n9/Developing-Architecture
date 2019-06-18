@@ -86,7 +86,7 @@
 * **DevOps EcoSystem：**
 * **Agile Software Development：**
 
-![Cloud native technology](../.gitbook/assets/wei-fu-wu-ji-shu-zhan.jpg)
+![Cloud native technology](.gitbook/assets/wei-fu-wu-ji-shu-zhan.jpg)
 
 [CATALOG](developing_architecture.md#catalog) \| [NEXT](developing_architecture.md#ch2)
 
@@ -94,7 +94,7 @@
 
 #### 至少讓同仁都看得懂下圖，且知道現在待的案子達成了那些，及那些還可以加強的。
 
-![Cloud native picture](../.gitbook/assets/messageimage_1523528832290%20%282%29.jpg)
+![Cloud native picture](.gitbook/assets/messageimage_1523528832290%20%282%29.jpg)
 
 [PRIVOUS](developing_architecture.md#ch1) \| [CATALOG](developing_architecture.md#catalog) \| [NEXT](developing_architecture.md#ch3)
 
